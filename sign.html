@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>sign</title>
+  <script src="./sign.js"></script>
+</head>
+
+<body>
+  <div id="container">
+
+  </div>
+  <button onclick="clearRect()">清除</button>
+  <button onclick="canvas2Img()">转为图片</button>
+  <img src="" alt="" class="preview">
+</body>
+<script>
+  let s = new window.sign({
+    el: '#container',
+    width: 200,
+    height: 100,
+    canvasOptions: {
+      lineWidth: 5,
+      strokeStyle: '#323888',
+      lineCap: 'round',
+      lineJoin: 'round',
+      shadowBlur: 1
+    }
+  });
+  function clearRect() {
+    s.clearRect(0, 0, 300, 150)
+  }
+  function canvas2Img() {
+    s.canvas2Img()
+  }
+</script>
+
+</html>

@@ -1,0 +1,40 @@
+{
+  "name": "yk-sign",
+  "version": "1.0.4",
+  "main": "dist/main.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --config ./build/webpack.dev.conf.js",
+    "build": "webpack --config ./build/webpack.prod.conf.js"
+  },
+  "author": "wong yuan",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "copy-webpack-plugin": "^5.0.4"
+  },
+  "directories": {
+    "example": "example"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "chalk": "^2.4.2",
+    "console": "^0.7.2",
+    "css-loader": "^3.2.0",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "html-webpack-plugin": "^3.2.0",
+    "ora": "^3.4.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^1.0.0",
+    "url-loader": "^2.1.0",
+    "vconsole": "^3.3.2",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2",
+    "webpack-merge": "^4.2.1",
+    "webpack-parallel-uglify-plugin": "^1.1.1"
+  },
+  "description": ""
+}
